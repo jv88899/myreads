@@ -1,6 +1,6 @@
 import React from 'react';
-import Shelf from './Shelf';
 import { Link } from 'react-router-dom';
+import Shelf from './Shelf';
 
 class BookShelf extends React.Component {
     render() {
@@ -33,6 +33,9 @@ class BookShelf extends React.Component {
                             handleChange={this.props.handleChange}
                         />
                     </div>
+                </div>
+                <div className="open-search">
+                    <Link to='/search'>Add a book</Link>
                 </div>
             </div>
         )
