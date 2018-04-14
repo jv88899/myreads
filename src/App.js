@@ -22,7 +22,6 @@ class App extends React.Component {
       let newBooks = this.state.books.filter( (newBook) => {
         return newBook.id !== book.id;
       })
-      // newBooks.push(book);
       this.setState({ books: newBooks.concat(book) })
     })
   }
